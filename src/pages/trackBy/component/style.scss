@@ -1,0 +1,307 @@
+$colours: FFF, 21a9e4, 2c9ccf, db893c, af70e6, 2cb68c, eee, 4599f3, 313572, 578ac4, c77c32, 277e88, 4eb7c3, ee975f;
+$hash: '#';
+
+body {
+    margin: 0;
+    overflow-x: hidden;    
+    overflow-y: auto;
+
+    .maps-Container {
+        background: #202b57;
+        color: #FFF;
+        .mapClicked {
+            .allBody {
+                display: flex;
+                .mapsContainer {
+                    width: calc(100% / 3);
+                    .mapsBlock {
+                        height: calc(100vh - 300px);
+                        .rowClass {
+                            display: block;
+                            width: 100%;
+                            .colClass  {
+                                display: inline-block;
+                                width: calc(100% / 2);
+                                .map-container {
+                                    .mapBlock > div {
+                                        height: 150px !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .rightSideBar {
+                    width: calc(100% - calc(100% / 3));
+                    padding: 5px;
+                    margin: 10px;
+                    .shipmentCont {
+                        .shipmentContainer {
+                            .shipmentBlock {
+                                .mapHeadLevel {
+                                    margin: 0;
+                                    padding: 7px;
+                                    color: #FFF;
+                                    font-weight: bold;
+                                }
+                                .mapBlock {
+                                    > div {
+                                        height: calc(100vh - 300px) !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .TripListDetails {
+                .tripCont {
+                    margin: 10px 20px;
+                    padding: 10px 0;
+                    .imgBox {
+                        .imgContainer {
+                            img {
+                                width: 130px;
+                                height: 130px;
+                            }
+                        }
+                    }    
+                }
+            }
+        }
+    }
+    
+    
+
+
+        .text-upper { text-transform: uppercase; }
+        .mb-0 { margin-bottom: 0; }
+        .vmiddle { vertical-align: middle;  } 
+        margin: 15px;
+        .mapsContainer {
+            padding: 5px;
+            background: #293367;
+            border-radius: 10px;
+            margin: 10px;
+            .shipmentClass {
+                margin-bottom: 0;
+            }
+        }
+        .mapsBlock {
+            background: #293367;
+            color: #FFF;
+
+            
+            /* width */
+            &::-webkit-scrollbar {
+                width: 6px;    
+                height: 6px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px grey; 
+                border-radius: 10px;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #08b6ec; 
+                border-radius: 10px;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #08b6ec;
+                width: 7px;
+                height: 7px; 
+            }
+            max-height: 100%;
+            height: 486px;
+            overflow: hidden;
+            //border: 1px solid #555;
+            display: inline-block;
+            width: 100%;
+            overflow-x: auto;
+            resize: vertical;
+            white-space: nowrap;
+            overflow-y: auto;
+            position: relative;
+            &::-webkit-resizer {
+                //background-color: transparent;
+            }
+
+            .margin_0 {
+                margin: 10px 0;
+            }
+            .padding_0 {
+                padding: 0;
+            }
+            .rowClass {
+                display: inline-block;
+                width: calc(100% / 4);
+                vertical-align: top;
+                .map-container {
+                    //border: 1px solid #eee;
+                    margin: 4px;
+                    //box-shadow: 4px 4px 5px #eee;
+                    padding: 3px;
+                    .gmnoprint {
+                        display: none;
+                    }
+                    a[rel*="noopener"] {
+                        display: none;
+                    }
+                    .mapHeadLevel {
+                        margin: 0;
+                        background: #4599f3;
+                        padding: 7px;
+                        color: #FFF;
+                        font-weight: bold;
+                        .iconwithText  {
+                            font-size: 12px;
+                            font-weight: normal;
+                            position: relative;
+                            margin-top: 5px;
+                        
+                            .icon {
+                                border: 1px solid #FFF;
+                                border-radius: 50%;
+                                margin-right: 8px;
+                                position: absolute;
+                                left: -40px;
+                                top: -7px;
+                                span.material-icons {
+                                    font-size: 20px;
+                                    padding: 4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .d-flex {
+            .flexD-1 {
+                flex: 1;
+            }
+        }
+
+        .overViewBlock {
+            .overViewContainer {
+                .overViewCont {
+                    .overvievPara {
+                        border-bottom: 1px solid #eee;
+                    }
+                }
+            }
+        }
+
+        .shipmentList {
+            display: inline-block;
+            width: 100%;
+            .driverImages {
+                display: inline-block;
+                padding: 10px 30px;
+                .imgClass {
+                    img {                        
+                        border-radius: 50%;
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+            }
+        }
+
+        .boxes {
+            //border: 1px solid #555;
+            padding: 8px;
+            border-radius: 7px;
+            height: 333px;
+            overflow: hidden;
+            overflow-y: auto;
+            background: #293368;
+            
+            &.box1 {
+                .driverList {
+                    .driverContainer {
+                        border-bottom: 0.5px solid #ccc;
+                        margin: 5px 10px 15px 10px;
+                    }
+                }
+            }
+            &.box3 {
+                .orderDetailsList {
+                    margin: 5px;
+                    .orderLists {
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        padding: 8px;
+                        margin: 8px;
+                        .timeBlock {
+                            p {
+                                margin-bottom: 0;
+                            }
+                            .label {
+                                font-size: 12.5px;
+                                margin-bottom: 5px;
+                            }
+                            .value {
+                                font-size: 13px;
+                            }
+                            .iconCont {
+                                span {
+                                font-size: 17px;
+                                vertical-align: middle;
+                                }
+                            }
+                        }
+                        .driverInfo {
+                            .driverDetails {
+                                margin-top: 10px;
+                                font-size: 14px;
+                                color: #7861b8;
+                            }
+                            .driverDet {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+            .imgClass {
+                margin-right: 10px;
+                img {
+                    border: 1px solid #555;
+                    border-radius: 50%;
+                    height: 58px;
+                    width: 58px;
+                }
+            }
+            /* width */
+            &::-webkit-scrollbar {
+                width: 6px;    
+                height: 6px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px grey; 
+                border-radius: 10px;
+            }
+
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+                background: #08b6ec; 
+                border-radius: 10px;
+            }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                width: 7px;
+                height: 7px;
+            }
+        }
+    }
+

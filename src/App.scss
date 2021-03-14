@@ -1,0 +1,9 @@
+$colours: FFF, 21a9e4, 2c9ccf, db893c, af70e6, 2cb68c, eee, 4599f3, 313572, 578ac4, c77c32, 277e88, 4eb7c3, ee975f;
+$hash: '#';
+body {
+@for $i from 0 through 100 {
+    .font-#{$i} {
+        font-size: #{$i}px;
+    }
+}
+}
